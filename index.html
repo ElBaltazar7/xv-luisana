@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis XV Años — Luisana Daniela Baltazar Mamani</title>
+
+  <!--
+    ========================================================================
+    GUÍA RÁPIDA PARA PUBLICAR EN NETLIFY DROP O GITHUB PAGES
+    ========================================================================
+    Para que todas tus fotos y tu canción de piano carguen al subir esta
+    invitación a internet, coloca estos archivos en la MISMA CARPETA que
+    este archivo HTML (renombrado a index.html):
+
+      1. index.html            (este archivo)
+      2. 0A9A8855.JPG.jpg      (Foto principal: vestido circular en el pasto)
+      3. 0A9A8683.JPG.jpg      (Foto 2: perfil con mariposas moradas)
+      4. 0A9A8694.JPG.jpg      (Foto 3: vestido abierto al sol)
+      5. 0A9A8765.JPG.jpg      (Foto 4: sosteniendo la luna mágica)
+      6. musica.mp3            (Tu archivo MP3 de La Bella y la Bestia en piano)
+
+    Nota: Si abres la vista previa sin musica.mp3 en la carpeta, la página
+    activará automáticamente un piano romántico de respaldo para que siempre
+    puedas escuchar la melodía.
+    ========================================================================
+  -->
+
+  <!-- Metadatos para vista previa bonita al compartir por WhatsApp -->
+  <meta property="og:title" content="Mis XV Años — Luisana Daniela" />
+  <meta property="og:description" content="Sábado 19 de Diciembre de 2026 · 19:30 hrs · Salón de Eventos DIPRECA. ¡Presiona para abrir tu invitación!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="0A9A8855.JPG.jpg" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Alex Brush / Great Vibes (Caligrafía), Cinzel & Cormorant Garamond (Serif elegante), Montserrat (Cuerpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Configuración personalizada de Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            parchment: '#FAF6EE',
+            parchmentWarm: '#F3EBD9',
+            parchmentDeep: '#E8DCC6',
+            goldAntique: '#B88E38',
+            goldLight: '#DFC070',
+            goldDark: '#8F6A20',
+            wine: '#6A1638',
+            wineDeep: '#4B0E27',
+            wineSoft: '#94355B',
+            lilacMist: '#D8C2E6',
+            inkWarm: '#4E3B2B',
+          },
+          fontFamily: {
+            script: ['"Great Vibes"', 'cursive'],
+            cinzel: ['"Cinzel"', 'serif'],
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Montserrat"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    /* ============================================================
+       ESTILOS BASE: PERGAMINO MARFIL, ORO ANTIGUO Y VINO-BURDEO
+       ============================================================ */
+    :root {
+      --parchment: #FAF6EE;
+      --parchment-warm: #F4ECDC;
+      --gold: #B88E38;
+      --gold-light: #E2C578;
+      --gold-dark: #8C671E;
+      --wine: #6A1638;
+      --wine-deep: #4B0E27;
+      --lilac: #D8C2E6;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background-color: var(--parchment);
+      color: #4E3B2B;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Textura sutil de papel algodón / pergamino artesanal */
+    .parchment-texture {
+      background-color: #FAF6EE;
+      background-image:
+        radial-gradient(circle at 18% 12%, rgba(226, 197, 120, 0.14) 0%, transparent 45%),
+        radial-gradient(circle at 85% 25%, rgba(216, 194, 230, 0.16) 0%, transparent 42%),
+        radial-gradient(circle at 15% 78%, rgba(106, 22, 56, 0.05) 0%, transparent 45%),
+        radial-gradient(circle at 88% 82%, rgba(226, 197, 120, 0.15) 0%, transparent 48%),
+        repeating-linear-gradient(
+          0deg,
+          rgba(184, 142, 56, 0.015) 0px,
+          rgba(184, 142, 56, 0.015) 1px,
+          transparent 1px,
+          transparent 4px
+        );
+    }
+
+    /* Texto dorado metálico estilo foil estampado */
+    .gold-foil {
+      background: linear-gradient(135deg, #9A7223 0%, #D9B65B 35%, #F0D98C 52%, #B58B32 75%, #845E16 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Marco interior tipo tarjeta de pergamino de lujo */
+    .parchment-sheet {
+      position: relative;
+      background: linear-gradient(180deg, #FCF9F2 0%, #FAF5EA 50%, #F7F0E2 100%);
+      box-shadow: 0 18px 50px rgba(78, 59, 43, 0.10);
+    }
+
+    .gold-double-border {
+      border: 1px solid rgba(184, 142, 56, 0.42);
+      box-shadow: inset 0 0 0 4px #FAF6EE, inset 0 0 0 5px rgba(184, 142, 56, 0.25);
+    }
+
+    /* Botón de lujo vino-burdeo y oro */
+    .btn-royal {
+      background: linear-gradient(135deg, #7A1C43 0%, #5E1232 55%, #4A0D27 100%);
+      border: 1px solid rgba(226, 197, 120, 0.72);
+      box-shadow: 0 8px 22px rgba(75, 14, 39, 0.28);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+    }
+
+    .btn-royal:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 26px rgba(75, 14, 39, 0.36);
+      filter: brightness(1.06);
+    }
+
+    .btn-royal:active {
+      transform: translateY(0);
+    }
+
+    /* Botón circular dorado de Play/Pause */
+    .btn-gold-circle {
+      background: linear-gradient(145deg, #E5C878 0%, #C2963C 55%, #9B7322 100%);
+      box-shadow: 0 6px 18px rgba(155, 115, 34, 0.36), inset 0 1px 1px rgba(255, 255, 255, 0.65);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .btn-gold-circle:hover {
+      transform: scale(1.06);
+      box-shadow: 0 8px 22px rgba(155, 115, 34, 0.48);
+    }
+
+    /* ============================================================
+       PANTALLA 1: SOBRE REALISTA 3D CON SELLO DE CERA DORADO
+       (Inspirado en la captura de muestra Fribumi)
+       ============================================================ */
+    #envelope-screen {
+      background: radial-gradient(circle at 50% 42%, #FFFDF8 0%, #F7F1E4 62%, #EFE5D1 100%);
+      transition: opacity 0.95s cubic-bezier(0.22, 1, 0.36, 1), transform 0.95s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    #envelope-screen.fade-out {
+      opacity: 0;
+      transform: scale(1.05);
+      pointer-events: none;
+    }
+
+    .envelope-stage {
+      perspective: 1100px;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .envelope-box {
+      position: relative;
+      width: min(84vw, 315px);
+      aspect-ratio: 1.44 / 1;
+      margin: 0 auto;
+      background: linear-gradient(155deg, #ECE3CF 0%, #DFD3B9 100%);
+      border-radius: 6px;
+      box-shadow:
+        0 20px 42px rgba(92, 70, 42, 0.22),
+        0 4px 10px rgba(92, 70, 42, 0.12),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.55);
+      transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .envelope-stage:hover .envelope-box {
+      transform: translateY(-4px);
+    }
+
+    /* Tarjeta interior que se desliza hacia arriba al abrir el sobre */
+    .envelope-letter {
+      position: absolute;
+      left: 7%;
+      right: 7%;
+      bottom: 8%;
+      height: 82%;
+      background: linear-gradient(180deg, #FFFDF9 0%, #FAF3E5 100%);
+      border: 1px solid rgba(184, 142, 56, 0.45);
+      border-radius: 4px;
+      box-shadow: 0 4px 16px rgba(78, 59, 43, 0.12);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      transform: translateY(0);
+      transition: transform 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.25s;
+    }
+
+    /* Pliegues laterales e inferior del sobre */
+    .envelope-pocket {
+      position: absolute;
+      inset: 0;
+      z-index: 4;
+      pointer-events: none;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    /* Solapa superior del sobre (animación 3D) */
+    .envelope-flap-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 62%;
+      z-index: 6;
+      transform-origin: top center;
+      transform-style: preserve-3d;
+      transition: transform 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+      filter: drop-shadow(0 5px 8px rgba(84, 63, 35, 0.18));
+    }
+
+    /* Sello de cera metálico dorado */
+    .wax-seal {
+      position: absolute;
+      left: 50%;
+      top: 56%;
+      transform: translate(-50%, -50%);
+      width: 62px;
+      height: 62px;
+      z-index: 10;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 32% 28%, #F8E5A2 0%, #D9B150 38%, #A67C23 78%, #7E5A14 100%);
+      box-shadow:
+        0 6px 14px rgba(72, 49, 14, 0.38),
+        inset 0 2px 3px rgba(255, 248, 220, 0.8),
+        inset 0 -3px 6px rgba(95, 65, 12, 0.65);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.55s ease, opacity 0.45s ease;
+      animation: sealPulse 2.8s ease-in-out infinite;
+    }
+
+    .wax-seal::before {
+      content: '';
+      position: absolute;
+      inset: 5px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(255, 243, 200, 0.55);
+      box-shadow: inset 0 1px 4px rgba(96, 66, 12, 0.55);
+    }
+
+    @keyframes sealPulse {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); }
+      50% { transform: translate(-50%, -50%) scale(1.05); }
+    }
+
+    /* Estado abierto del sobre */
+    .envelope-box.is-open .wax-seal {
+      animation: none;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.7);
+    }
+
+    .envelope-box.is-open .envelope-flap-wrap {
+      transform: rotateX(175deg);
+      z-index: 1;
+    }
+
+    .envelope-box.is-open .envelope-letter {
+      transform: translateY(-48%);
+      z-index: 5;
+    }
+
+    /* ============================================================
+       EFECTO PAPEL RASGADO (TORN-PAPER PHOTO REVEAL)
+       ============================================================ */
+    .torn-photo-band {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background-color: #26121A;
+    }
+
+    .torn-edge-top,
+    .torn-edge-bottom {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: auto;
+      display: block;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .torn-edge-top {
+      top: -1px;
+      filter: drop-shadow(0 4px 5px rgba(45, 28, 16, 0.28));
+    }
+
+    .torn-edge-bottom {
+      bottom: -1px;
+      filter: drop-shadow(0 -4px 5px rgba(45, 28, 16, 0.25));
+    }
+
+    /* ============================================================
+       ANIMACIONES SUTILES (SCROLL, FLORES, ONDAS DE AUDIO)
+       ============================================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes floralSway {
+      0%, 100% { transform: rotate(0deg) translate3d(0, 0, 0); }
+      40% { transform: rotate(2.4deg) translate3d(1.5px, -1.5px, 0); }
+      75% { transform: rotate(-1.8deg) translate3d(-1px, 1px, 0); }
+    }
+
+    @keyframes floralBreathe {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.045); }
+    }
+
+    @keyframes waveBar {
+      0%, 100% { height: 4px; }
+      50% { height: 15px; }
+    }
+
+    .floral-sway {
+      animation: floralSway 7.8s ease-in-out infinite;
+    }
+
+    .floral-breathe {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: floralBreathe 5.5s ease-in-out infinite;
+    }
+
+    .audio-wave-bar {
+      width: 2.5px;
+      height: 5px;
+      border-radius: 999px;
+      background-color: #B88E38;
+      transition: height 0.2s ease;
+    }
+
+    .is-playing .audio-wave-bar:nth-child(1) { animation: waveBar 0.85s ease-in-out infinite 0s; }
+    .is-playing .audio-wave-bar:nth-child(2) { animation: waveBar 0.7s ease-in-out infinite 0.15s; }
+    .is-playing .audio-wave-bar:nth-child(3) { animation: waveBar 0.95s ease-in-out infinite 0.3s; }
+    .is-playing .audio-wave-bar:nth-child(4) { animation: waveBar 0.78s ease-in-out infinite 0.45s; }
+
+    /* Lienzo de destellos dorados sutiles */
+    #sparkles-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .floral-sway, .floral-breathe, .wax-seal {
+        animation: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="parchment-texture antialiased selection:bg-lilacMist/60 selection:text-wineDeep">
+
+  <!-- Lienzo de destellos dorados suaves flotando en el fondo -->
+  <canvas id="sparkles-canvas" aria-hidden="true"></canvas>
+
+  <!-- ============================================================
+       AUDIO PRINCIPAL: LA BELLA Y LA BESTIA EN PIANO
+       Coloca tu archivo MP3 renombrado como "musica.mp3" en la misma
+       carpeta que este HTML. Si no existe aún, el código activa el
+       piano romántico de respaldo automáticamente.
+       ============================================================ -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="musica.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- ============================================================
+       PANTALLA 1: PORTADA INTERACTIVA CON SOBRE Y SELLO DE CERA
+       (Inspirada en la captura 1: image_098c1b.png)
+       ============================================================ -->
+  <div
+    id="envelope-screen"
+    class="fixed inset-0 z-50 flex flex-col items-center justify-center px-6 py-10 text-center"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Portada interactiva de invitación de XV años"
+  >
+    <!-- Encabezado superior del sobre -->
+    <div class="mb-7 sm:mb-9">
+      <p class="font-cinzel uppercase tracking-[0.34em] text-[11px] sm:text-xs text-goldAntique font-medium mb-2">
+        MIS QUINCE AÑOS
+      </p>
+      <h1 class="font-script text-6xl sm:text-7xl gold-foil leading-none py-1">
+        Luisana
+      </h1>
+    </div>
+
+    <!-- Sobre 3D interactivo -->
+    <div
+      id="envelope-trigger"
+      class="envelope-stage my-2"
+      role="button"
+      tabindex="0"
+      aria-label="Presiona el sobre para abrir la invitación y reproducir la música"
+    >
+      <div id="envelope-box" class="envelope-box">
+        <!-- Tarjeta interior que emerge al abrir -->
+        <div class="envelope-letter">
+          <p class="font-cinzel uppercase tracking-[0.25em] text-[9px] text-goldAntique mb-1">
+            MIS XV AÑOS
+          </p>
+          <p class="font-script text-3xl gold-foil leading-tight">
+            Luisana Daniela
+          </p>
+          <div class="w-12 h-[1px] bg-goldLight/80 my-1.5"></div>
+          <p class="font-serif italic text-xs text-wine">
+            19 · Diciembre · 2026
+          </p>
+        </div>
+
+        <!-- Cuerpo frontal del sobre (triángulos laterales e inferior) -->
+        <div class="envelope-pocket">
+          <svg class="w-full h-full" viewBox="0 0 320 222" preserveAspectRatio="none" aria-hidden="true">
+            <!-- Pliegue izquierdo -->
+            <polygon points="0,0 162,115 0,222" fill="#EDE4D2" />
+            <!-- Pliegue derecho -->
+            <polygon points="320,0 158,115 320,222" fill="#E8DEC8" />
+            <!-- Pliegue inferior -->
+            <polygon points="0,222 160,104 320,222" fill="#F2EADA" />
+            <!-- Sombras muy sutiles en los dobleces -->
+            <polyline points="0,222 160,104 320,222" fill="none" stroke="#D3C4A7" stroke-width="1" />
+            <line x1="0" y1="0" x2="160" y2="112" stroke="#D8CAAF" stroke-width="0.8" />
+            <line x1="320" y1="0" x2="160" y2="112" stroke="#D8CAAF" stroke-width="0.8" />
+          </svg>
+        </div>
+
+        <!-- Solapa superior que se abre en 3D -->
+        <div class="envelope-flap-wrap">
+          <svg class="w-full h-full" viewBox="0 0 320 138" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0,0 L320,0 L170,126 Q160,135 150,126 Z" fill="#F6EFE1" stroke="#DFD2B8" stroke-width="1" />
+          </svg>
+        </div>
+
+        <!-- Sello de cera dorado metálico con corona y monograma -->
+        <div class="wax-seal" aria-hidden="true">
+          <svg class="w-8 h-8 text-[#755010]" viewBox="0 0 40 40" fill="none">
+            <!-- Corona delicada grabada en relieve -->
+            <path
+              d="M9 24L7 13L14.5 18.5L20 10L25.5 18.5L33 13L31 24H9Z"
+              stroke="currentColor"
+              stroke-width="1.6"
+              fill="rgba(255,244,204,0.28)"
+              stroke-linejoin="round"
+            />
+            <path d="M10.5 27.5H29.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+            <circle cx="20" cy="7.5" r="1.6" fill="currentColor" />
+            <circle cx="7" cy="11.5" r="1.3" fill="currentColor" />
+            <circle cx="33" cy="11.5" r="1.3" fill="currentColor" />
+            <path d="M15 31.5C17.5 30.2 22.5 30.2 25 31.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Indicaciones elegantes debajo del sobre -->
+    <div class="mt-8 sm:mt-10 space-y-4">
+      <p class="font-cinzel uppercase tracking-[0.26em] text-xs sm:text-sm text-goldAntique font-medium leading-relaxed">
+        PRESIONA EL SOBRE<br />PARA ABRIRLO
+      </p>
+
+      <div class="flex items-center justify-center gap-3">
+        <span class="h-[1px] w-10 bg-goldLight/80"></span>
+        <span class="w-1.5 h-1.5 rotate-45 bg-goldAntique/70"></span>
+        <span class="h-[1px] w-10 bg-goldLight/80"></span>
+      </div>
+
+      <p class="font-serif text-base sm:text-lg text-goldDark/90 leading-snug">
+        He reservado un lugar<br />
+        <span class="font-semibold text-wine">muy especial en tu honor</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       PANTALLA 2: INVITACIÓN PRINCIPAL ESTILO PERGAMINO
+       ============================================================ -->
+  <main class="relative z-10 w-full max-w-[460px] sm:max-w-[520px] mx-auto my-0 sm:my-6 parchment-sheet sm:rounded-3xl overflow-hidden border-x sm:border border-goldAntique/30">
+
+    <!-- ============================================================
+         1. PORTADA PERGAMINO + FOTO CON EFECTO PAPEL RASGADO
+         (Inspirada exactamente en la captura 2: image_098f04.png)
+         ============================================================ -->
+    <section class="relative pt-10 pb-8 text-center">
+      <!-- Borde dorado sutil superior -->
+      <div class="pointer-events-none absolute inset-x-4 top-4 bottom-4 border border-goldAntique/30 rounded-2xl"></div>
+
+      <!-- Adorno floral animado esquina superior izquierda -->
+      <svg class="pointer-events-none floral-sway absolute top-2 left-2 w-24 h-24 opacity-90" style="transform-origin: 18% 18%;" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+        <path d="M22 36C12 18 32 6 50 18C40 30 32 36 22 36Z" fill="#E8D8EE" stroke="#94355B" stroke-width="0.7" stroke-opacity="0.45" />
+        <path d="M18 46C6 54 6 74 20 84C28 70 28 58 18 46Z" fill="#DFC070" fill-opacity="0.35" stroke="#B88E38" stroke-width="0.7" />
+        <g class="floral-breathe">
+          <circle cx="32" cy="36" r="14" fill="#8C2850" fill-opacity="0.82" />
+          <path d="M22 33C25 24 39 22 44 30C48 37 44 47 35 49C26 51 19 42 22 33Z" fill="#D8C2E6" fill-opacity="0.78" />
+          <circle cx="32" cy="36" r="6.5" fill="#6A1638" fill-opacity="0.85" />
+          <circle cx="32" cy="36" r="2.2" fill="#F0D98C" />
+        </g>
+        <circle cx="54" cy="26" r="6" fill="#FAF6EE" stroke="#B88E38" stroke-width="0.8" />
+        <circle cx="54" cy="26" r="2" fill="#B88E38" />
+      </svg>
+
+      <!-- Adorno floral animado esquina superior derecha -->
+      <svg class="pointer-events-none floral-sway absolute top-2 right-2 w-24 h-24 opacity-90" style="transform: scaleX(-1); transform-origin: 82% 18%; animation-delay: 1.4s;" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+        <path d="M22 36C12 18 32 6 50 18C40 30 32 36 22 36Z" fill="#E8D8EE" stroke="#94355B" stroke-width="0.7" stroke-opacity="0.45" />
+        <path d="M18 46C6 54 6 74 20 84C28 70 28 58 18 46Z" fill="#DFC070" fill-opacity="0.35" stroke="#B88E38" stroke-width="0.7" />
+        <g class="floral-breathe" style="animation-delay: 1.2s;">
+          <circle cx="32" cy="36" r="14" fill="#8C2850" fill-opacity="0.82" />
+          <path d="M22 33C25 24 39 22 44 30C48 37 44 47 35 49C26 51 19 42 22 33Z" fill="#D8C2E6" fill-opacity="0.78" />
+          <circle cx="32" cy="36" r="6.5" fill="#6A1638" fill-opacity="0.85" />
+          <circle cx="32" cy="36" r="2.2" fill="#F0D98C" />
+        </g>
+        <circle cx="54" cy="26" r="6" fill="#FAF6EE" stroke="#B88E38" stroke-width="0.8" />
+        <circle cx="54" cy="26" r="2" fill="#B88E38" />
+      </svg>
+
+      <!-- Títulos superiores -->
+      <div class="relative z-10 px-6 pt-3">
+        <p class="font-cinzel uppercase tracking-[0.34em] text-[11px] sm:text-xs text-goldAntique font-medium mb-2">
+          MIS QUINCE AÑOS
+        </p>
+
+        <h1 class="font-script text-[3.4rem] sm:text-[4rem] gold-foil leading-[1.06] mb-1">
+          Luisana<br />Daniela
+        </h1>
+
+        <p class="font-cinzel uppercase tracking-[0.24em] text-[10px] sm:text-[11px] text-wine/85 font-medium mt-1 mb-5">
+          Baltazar Mamani
+        </p>
+
+        <!-- Mini reproductor inline estilo Fribumi -->
+        <div class="mb-6 flex flex-col items-center">
+          <p class="font-cinzel uppercase tracking-[0.2em] text-[9px] sm:text-[10px] text-goldAntique/90 mb-2.5">
+            PRESIONA PLAY PARA REPRODUCIR LA MÚSICA
+          </p>
+
+          <!-- Línea decorativa con botón Play/Pause dorado -->
+          <div class="flex items-center justify-center gap-3 w-full max-w-[260px]">
+            <span class="h-[1px] flex-1 bg-gradient-to-r from-transparent via-goldLight to-goldAntique"></span>
+
+            <!-- Ondas de audio izquierda -->
+            <div id="inline-waves-left" class="flex items-center gap-[2.5px] h-4">
+              <span class="audio-wave-bar"></span>
+              <span class="audio-wave-bar"></span>
+            </div>
+
+            <button
+              id="inline-music-btn"
+              type="button"
+              aria-label="Reproducir o pausar música"
+              class="btn-gold-circle w-10 h-10 rounded-full flex items-center justify-center text-white cursor-pointer"
+            >
+              <!-- Ícono Play -->
+              <svg id="inline-icon-play" class="w-4 h-4 ml-0.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              <!-- Ícono Pause -->
+              <svg id="inline-icon-pause" class="w-4 h-4 hidden" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6 5h4v14H6zm8 0h4v14h-4z" />
+              </svg>
+            </button>
+
+            <!-- Ondas de audio derecha -->
+            <div id="inline-waves-right" class="flex items-center gap-[2.5px] h-4">
+              <span class="audio-wave-bar"></span>
+              <span class="audio-wave-bar"></span>
+            </div>
+
+            <span class="h-[1px] flex-1 bg-gradient-to-l from-transparent via-goldLight to-goldAntique"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOTO 1 HERO CON EFECTO DE PAPEL RASGADO ARRIBA Y ABAJO -->
+      <div class="torn-photo-band my-1">
+        <!-- Borde superior de papel rasgado -->
+        <svg class="torn-edge-top" viewBox="0 0 600 42" preserveAspectRatio="none" aria-hidden="true">
+          <path
+            d="M0,0 L600,0 L600,22 L578,16 L556,28 L534,19 L510,27 L485,14 L462,24 L438,17 L415,29 L390,18 L365,26 L342,15 L318,27 L292,16 L268,28 L244,19 L220,25 L196,14 L172,26 L148,18 L124,29 L100,17 L76,26 L52,15 L28,24 L0,18 Z"
+            fill="#FAF6EE"
+          />
+        </svg>
+
+        <!-- Imagen principal (0A9A8855.JPG.jpg - vestido circular desde arriba) -->
+        <div class="w-full aspect-[4/3] sm:aspect-[16/11] bg-wineDeep/20">
+          <img
+            src="0A9A8855.JPG.jpg"
+            alt="Luisana Daniela con su vestido de quinceañera"
+            class="w-full h-full object-cover object-center"
+            onerror="this.onerror=null; this.src='https://placehold.co/900x650/6A1638/F0D98C?text=Foto+Principal+0A9A8855.JPG.jpg';"
+          />
+        </div>
+
+        <!-- Borde inferior de papel rasgado -->
+        <svg class="torn-edge-bottom" viewBox="0 0 600 42" preserveAspectRatio="none" aria-hidden="true">
+          <path
+            d="M0,42 L600,42 L600,18 L576,25 L552,14 L528,26 L504,17 L480,28 L456,16 L432,27 L408,15 L384,26 L360,18 L336,29 L312,16 L288,25 L264,14 L240,27 L216,17 L192,28 L168,16 L144,26 L120,15 L96,27 L72,18 L48,25 L24,14 L0,22 Z"
+            fill="#FAF6EE"
+          />
+        </svg>
+      </div>
+
+      <!-- Frase romántica justo debajo del corte rasgado (igual que la muestra) -->
+      <div class="relative z-10 px-8 pt-6 pb-4">
+        <p class="font-serif italic text-xl sm:text-2xl text-goldDark leading-relaxed">
+          “Hay momentos que se quedan para siempre en el corazón, hoy quiero compartir uno de ellos contigo.”
+        </p>
+
+        <!-- Ornamento divisor -->
+        <div class="flex items-center justify-center gap-3 mt-5">
+          <span class="h-[1px] w-14 bg-gradient-to-r from-transparent to-goldAntique/70"></span>
+          <svg class="w-5 h-5 text-wine/80" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L14.2 9.2L21.5 11.5L14.2 13.8L12 21L9.8 13.8L2.5 11.5L9.8 9.2L12 2Z" />
+          </svg>
+          <span class="h-[1px] w-14 bg-gradient-to-l from-transparent to-goldAntique/70"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         2. CUENTA REGRESIVA EN VIVO (19 DIC 2026 · 19:30 HRS)
+         ============================================================ -->
+    <section class="px-6 py-8 text-center reveal" aria-labelledby="countdown-title">
+      <p class="font-cinzel uppercase tracking-[0.28em] text-[10px] sm:text-xs text-wine font-semibold mb-1">
+        Solo faltan
+      </p>
+      <h2 id="countdown-title" class="font-script text-5xl gold-foil leading-tight mb-6">
+        Cuenta Regresiva
+      </h2>
+
+      <div class="grid grid-cols-4 gap-2.5 sm:gap-3.5 max-w-md mx-auto">
+        <div class="rounded-2xl bg-[#FFFDF9] border border-goldAntique/45 py-4 px-1.5 shadow-sm">
+          <span id="cd-days" class="block font-cinzel text-2xl sm:text-3xl font-semibold text-wineDeep">00</span>
+          <span class="block font-cinzel text-[9px] sm:text-[10px] uppercase tracking-widest text-goldAntique mt-1">Días</span>
+        </div>
+        <div class="rounded-2xl bg-[#FFFDF9] border border-goldAntique/45 py-4 px-1.5 shadow-sm">
+          <span id="cd-hours" class="block font-cinzel text-2xl sm:text-3xl font-semibold text-wineDeep">00</span>
+          <span class="block font-cinzel text-[9px] sm:text-[10px] uppercase tracking-widest text-goldAntique mt-1">Horas</span>
+        </div>
+        <div class="rounded-2xl bg-[#FFFDF9] border border-goldAntique/45 py-4 px-1.5 shadow-sm">
+          <span id="cd-minutes" class="block font-cinzel text-2xl sm:text-3xl font-semibold text-wineDeep">00</span>
+          <span class="block font-cinzel text-[9px] sm:text-[10px] uppercase tracking-widest text-goldAntique mt-1">Min</span>
+        </div>
+        <div class="rounded-2xl bg-[#FFFDF9] border border-goldAntique/45 py-4 px-1.5 shadow-sm">
+          <span id="cd-seconds" class="block font-cinzel text-2xl sm:text-3xl font-semibold text-goldAntique">00</span>
+          <span class="block font-cinzel text-[9px] sm:text-[10px] uppercase tracking-widest text-goldAntique mt-1">Seg</span>
+        </div>
+      </div>
+
+      <p id="countdown-finished" class="hidden mt-4 font-serif italic text-lg text-wine">
+        ¡Llegó el gran día! Te esperamos para celebrar los XV años de Luisana Daniela.
+      </p>
+    </section>
+
+    <!-- ============================================================
+         3. FOTO INTERCALADA 2 (0A9A8683.JPG.jpg — Mariposas moradas)
+         ============================================================ -->
+    <section class="py-4 reveal" aria-label="Fotografía de Luisana Daniela con mariposas">
+      <div class="torn-photo-band">
+        <svg class="torn-edge-top" viewBox="0 0 600 38" preserveAspectRatio="none" aria-hidden="true">
+          <path
+            d="M0,0 L600,0 L600,19 L570,13 L540,24 L510,15 L480,25 L450,14 L420,23 L390,13 L360,24 L330,15 L300,25 L270,14 L240,24 L210,16 L180,25 L150,13 L120,24 L90,15 L60,23 L30,14 L0,20 Z"
+            fill="#FAF6EE"
+          />
+        </svg>
+
+        <div class="w-full aspect-[4/5] bg-wineDeep/15">
+          <img
+            src="0A9A8683.JPG.jpg"
+            alt="Luisana Daniela con mariposas moradas"
+            class="w-full h-full object-cover object-top"
+            onerror="this.onerror=null; this.src='https://placehold.co/750x940/5E1232/F0D98C?text=Foto+2+0A9A8683.JPG.jpg';"
+          />
+        </div>
+
+        <svg class="torn-edge-bottom" viewBox="0 0 600 38" preserveAspectRatio="none" aria-hidden="true">
+          <path
+            d="M0,38 L600,38 L600,18 L570,24 L540,14 L510,23 L480,13 L450,24 L420,15 L390,25 L360,14 L330,23 L300,13 L270,24 L240,15 L210,25 L180,14 L150,24 L120,16 L90,25 L60,14 L30,23 L0,17 Z"
+            fill="#FAF6EE"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. FECHA, HORA Y LUGAR (SALÓN DIPRECA + GOOGLE MAPS)
+         ============================================================ -->
+    <section class="px-6 py-8 text-center reveal" aria-labelledby="event-title">
+      <div class="rounded-3xl bg-[#FFFDF9]/95 gold-double-border px-6 py-8 sm:px-8">
+        <!-- Ícono de calendario / ubicación dorado -->
+        <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-parchmentWarm border border-goldAntique/45 flex items-center justify-center text-wine">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z" />
+            <circle cx="12" cy="9.5" r="2.5" />
+          </svg>
+        </div>
+
+        <p class="font-cinzel uppercase tracking-[0.28em] text-[10px] sm:text-xs text-goldAntique font-semibold mb-1">
+          Acompáñame a celebrar
+        </p>
+        <h2 id="event-title" class="font-script text-5xl gold-foil leading-tight mb-5">
+          Cuándo y Dónde
+        </h2>
+
+        <!-- Fecha destacada -->
+        <div class="py-4 border-y border-goldAntique/30 mb-5">
+          <p class="font-cinzel uppercase tracking-[0.22em] text-xs text-wine font-semibold mb-1">
+            Sábado
+          </p>
+          <p class="font-serif text-3xl sm:text-4xl font-semibold text-wineDeep">
+            19 de Diciembre de 2026
+          </p>
+          <p class="font-cinzel text-sm sm:text-base text-goldDark tracking-widest mt-1.5 font-medium">
+            19:30 HRS
+          </p>
+        </div>
+
+        <!-- Lugar y Dirección -->
+        <div class="mb-6">
+          <p class="font-cinzel uppercase tracking-[0.22em] text-[11px] text-goldAntique font-semibold mb-1">
+            Recepción
+          </p>
+          <p class="font-serif text-2xl sm:text-3xl font-semibold text-wineDeep leading-snug">
+            Salón de Eventos DIPRECA
+          </p>
+          <p class="font-serif italic text-lg text-inkWarm/85 mt-1">
+            Calle Diego Portales, Copiapó
+          </p>
+        </div>
+
+        <!-- Botón Google Maps -->
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Salon+de+eventos+DIPRECA+Diego+Portales+Copiapo+Chile"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-royal inline-flex items-center justify-center gap-2.5 w-full sm:w-auto px-8 py-3.5 rounded-full text-white font-cinzel text-xs tracking-[0.18em] uppercase font-medium"
+        >
+          <svg class="w-4 h-4 text-goldLight" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+          </svg>
+          <span>VER EN GOOGLE MAPS</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. FOTO INTERCALADA 3 (0A9A8694.JPG.jpg — Vestido al sol)
+         ============================================================ -->
+    <section class="py-4 reveal" aria-label="Fotografía de Luisana Daniela con su vestido de princesa">
+      <div class="torn-photo-band">
+        <svg class="torn-edge-top" viewBox="0 0 600 38" preserveAspectRatio="none" aria-hidden="true">
+          <path
+            d="M0,0 L600,0 L600,17 L568,24 L536,13 L504,23 L472,15 L440,25 L408,14 L376,24 L344,13 L312,25 L280,16 L248,24 L216,13 L184,23 L152,15 L120,25 L88,14 L56,23 L24,15 L0,21 Z"
+            fill="#FAF6EE"
+          />
+        </svg>
+
+        <div class="w-full aspect-[4/5] bg-wineDeep/15">
+          <img
+            src="0A9A8694.JPG.jpg"
+            alt="Luisana Daniela sonriendo con su vestido vino"
+            class="w-full h-full object-cover object-center"
+            onerror="this.onerror=null; this.src='https://placehold.co/750x940/6A1638/F0D98C?text=Foto+3+0A9A8694.JPG.jpg';"
+          />
+        </div>
+
+        <svg class="torn-edge-bottom" viewBox="0 0 600 38" preserveAspectRatio="none" aria-hidden="true">
+          <path
+            d="M0,38 L600,38 L600,20 L568,14 L536,24 L504,15 L472,25 L440,14 L408,24 L376,13 L344,25 L312,16 L280,24 L248,13 L216,23 L184,15 L152,25 L120,14 L88,23 L56,15 L24,24 L0,18 Z"
+            fill="#FAF6EE"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. PADRES Y PADRINOS (CON MIS PERSONAS ESPECIALES)
+         ============================================================ -->
+    <section class="px-6 py-8 text-center reveal" aria-labelledby="family-title">
+      <div class="relative rounded-3xl bg-[#FFFDF9]/95 gold-double-border px-6 py-9 sm:px-8 overflow-hidden">
+        <!-- Detalle floral animado en esquina superior izquierda -->
+        <svg class="pointer-events-none floral-sway absolute -top-2 -left-2 w-24 h-24 opacity-85" style="transform-origin: 20% 20%;" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+          <path d="M22 36C12 18 32 6 50 18C40 30 32 36 22 36Z" fill="#DFC070" fill-opacity="0.35" stroke="#B88E38" stroke-width="0.7" />
+          <path d="M18 46C6 54 6 74 20 84C28 70 28 58 18 46Z" fill="#D8C2E6" fill-opacity="0.55" stroke="#94355B" stroke-width="0.7" />
+          <g class="floral-breathe">
+            <circle cx="32" cy="36" r="13" fill="#6A1638" fill-opacity="0.82" />
+            <circle cx="32" cy="36" r="6" fill="#D8C2E6" fill-opacity="0.85" />
+            <circle cx="32" cy="36" r="2.2" fill="#E2C578" />
+          </g>
+        </svg>
+
+        <!-- Detalle floral animado en esquina inferior derecha -->
+        <svg class="pointer-events-none floral-sway absolute -bottom-2 -right-2 w-24 h-24 rotate-180 opacity-85" style="transform-origin: 20% 20%; animation-delay: 1.5s;" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+          <path d="M22 36C12 18 32 6 50 18C40 30 32 36 22 36Z" fill="#DFC070" fill-opacity="0.35" stroke="#B88E38" stroke-width="0.7" />
+          <path d="M18 46C6 54 6 74 20 84C28 70 28 58 18 46Z" fill="#D8C2E6" fill-opacity="0.55" stroke="#94355B" stroke-width="0.7" />
+          <g class="floral-breathe" style="animation-delay: 1s;">
+            <circle cx="32" cy="36" r="13" fill="#6A1638" fill-opacity="0.82" />
+            <circle cx="32" cy="36" r="6" fill="#D8C2E6" fill-opacity="0.85" />
+            <circle cx="32" cy="36" r="2.2" fill="#E2C578" />
+          </g>
+        </svg>
+
+        <p class="font-cinzel uppercase tracking-[0.26em] text-[10px] sm:text-xs text-wine font-semibold mb-1">
+          Con la bendición de
+        </p>
+        <h2 id="family-title" class="font-script text-5xl gold-foil leading-tight mb-6">
+          Mis Personas Especiales
+        </h2>
+
+        <div class="space-y-6 relative z-10">
+          <!-- Padres -->
+          <div>
+            <h3 class="font-cinzel uppercase tracking-[0.24em] text-[11px] text-goldAntique font-semibold mb-2">
+              Mis Padres
+            </h3>
+            <p class="font-serif text-2xl sm:text-[1.65rem] font-semibold text-wineDeep leading-snug">
+              Daniel Baltazar Torrico
+            </p>
+            <p class="font-script text-2xl text-goldAntique leading-none my-1">&amp;</p>
+            <p class="font-serif text-2xl sm:text-[1.65rem] font-semibold text-wineDeep leading-snug">
+              Ximena Mamani Pinto
+            </p>
+          </div>
+
+          <div class="flex items-center justify-center gap-3">
+            <span class="h-[1px] w-12 bg-goldLight/80"></span>
+            <span class="w-1.5 h-1.5 rotate-45 bg-wine/60"></span>
+            <span class="h-[1px] w-12 bg-goldLight/80"></span>
+          </div>
+
+          <!-- Padrinos de 15 años -->
+          <div>
+            <h3 class="font-cinzel uppercase tracking-[0.22em] text-[11px] text-goldAntique font-semibold mb-1.5">
+              Padrinos de 15 Años
+            </h3>
+            <p class="font-serif text-xl sm:text-2xl font-semibold text-wineDeep leading-snug">
+              Wendy Mamani Pinto
+            </p>
+            <p class="font-script text-xl text-goldAntique leading-none my-0.5">y</p>
+            <p class="font-serif text-xl sm:text-2xl font-semibold text-wineDeep leading-snug">
+              Daniel Mamani Pinto
+            </p>
+          </div>
+
+          <!-- Padrinos de Cerveza -->
+          <div>
+            <h3 class="font-cinzel uppercase tracking-[0.22em] text-[11px] text-goldAntique font-semibold mb-1.5">
+              Padrinos de Cerveza
+            </h3>
+            <p class="font-serif text-xl sm:text-2xl font-semibold text-wineDeep leading-snug">
+              Gabriel Torrico Romero
+            </p>
+            <p class="font-script text-xl text-goldAntique leading-none my-0.5">e</p>
+            <p class="font-serif text-xl sm:text-2xl font-semibold text-wineDeep leading-snug">
+              Ines Quinteros
+            </p>
+          </div>
+
+          <!-- Padrino de Sorpresa -->
+          <div>
+            <h3 class="font-cinzel uppercase tracking-[0.22em] text-[11px] text-goldAntique font-semibold mb-1.5">
+              Padrino de Sorpresa
+            </h3>
+            <p class="font-serif text-xl sm:text-2xl font-semibold text-wineDeep leading-snug">
+              Emir Rivas Encinas
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. FOTO INTERCALADA 4 (0A9A8765.JPG.jpg — Luna mágica)
+         ============================================================ -->
+    <section class="py-4 reveal" aria-label="Fotografía mágica de Luisana Daniela sosteniendo la luna">
+      <div class="torn-photo-band">
+        <svg class="torn-edge-top" viewBox="0 0 600 38" preserveAspectRatio="none" aria-hidden="true">
+          <path
+            d="M0,0 L600,0 L600,20 L572,14 L544,25 L516,15 L488,24 L460,13 L432,25 L404,16 L376,24 L348,14 L320,25 L292,15 L264,23 L236,14 L208,24 L180,15 L152,25 L124,13 L96,24 L68,15 L40,23 L0,18 Z"
+            fill="#FAF6EE"
+          />
+        </svg>
+
+        <div class="relative w-full aspect-[4/5] bg-wineDeep/20">
+          <img
+            src="0A9A8765.JPG.jpg"
+            alt="Luisana Daniela sosteniendo la luna"
+            class="w-full h-full object-cover object-center"
+            onerror="this.onerror=null; this.src='https://placehold.co/750x940/4B0E27/F0D98C?text=Foto+4+0A9A8765.JPG.jpg';"
+          />
+          <!-- Destellos dorados sutiles sobre el cielo nocturno de la foto -->
+          <span class="pointer-events-none absolute top-10 right-10 w-2 h-2 rounded-full bg-goldLight shadow-[0_0_10px_#F0D98C] animate-pulse"></span>
+          <span class="pointer-events-none absolute top-20 left-12 w-1.5 h-1.5 rounded-full bg-white/90 shadow-[0_0_8px_#FFFFFF] animate-pulse"></span>
+        </div>
+
+        <svg class="torn-edge-bottom" viewBox="0 0 600 38" preserveAspectRatio="none" aria-hidden="true">
+          <path
+            d="M0,38 L600,38 L600,17 L572,24 L544,14 L516,25 L488,15 L460,24 L432,14 L404,25 L376,16 L348,24 L320,14 L292,25 L264,15 L236,24 L208,13 L180,24 L152,15 L124,25 L96,14 L68,23 L40,15 L0,21 Z"
+            fill="#FAF6EE"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8. CONFIRMACIÓN DE ASISTENCIA POR WHATSAPP (+569 68150474)
+         ============================================================ -->
+    <section class="px-6 py-8 reveal" aria-labelledby="rsvp-title">
+      <div class="rounded-3xl bg-[#FFFDF9]/95 gold-double-border px-6 py-8 sm:px-8">
+        <div class="text-center mb-6">
+          <p class="font-cinzel uppercase tracking-[0.26em] text-[10px] sm:text-xs text-wine font-semibold mb-1">
+            Tu presencia es muy importante
+          </p>
+          <h2 id="rsvp-title" class="font-script text-5xl gold-foil leading-tight">
+            Confirma tu Asistencia
+          </h2>
+          <p class="font-serif italic text-base sm:text-lg text-inkWarm/85 mt-2">
+            Por favor confírmanos tu asistencia para preparar esta gran noche con todo nuestro cariño.
+          </p>
+        </div>
+
+        <form id="rsvp-form" class="space-y-4" novalidate>
+          <!-- Nombre completo -->
+          <div>
+            <label for="guest-name" class="block font-cinzel text-[10px] uppercase tracking-[0.18em] font-semibold text-goldDark mb-1.5">
+              Nombre completo *
+            </label>
+            <input
+              id="guest-name"
+              type="text"
+              required
+              placeholder="Ej: Familia Pérez González"
+              class="w-full rounded-xl bg-parchment/80 border border-goldAntique/45 px-4 py-3 text-sm text-inkWarm placeholder-inkWarm/45 focus:outline-none focus:ring-2 focus:ring-wine/30 focus:border-wine transition"
+            />
+          </div>
+
+          <!-- Cantidad de personas -->
+          <div>
+            <label for="guest-count" class="block font-cinzel text-[10px] uppercase tracking-[0.18em] font-semibold text-goldDark mb-1.5">
+              Cantidad de personas *
+            </label>
+            <select
+              id="guest-count"
+              class="w-full rounded-xl bg-parchment/80 border border-goldAntique/45 px-4 py-3 text-sm text-inkWarm focus:outline-none focus:ring-2 focus:ring-wine/30 focus:border-wine transition"
+            >
+              <option value="1 persona">1 persona</option>
+              <option value="2 personas" selected>2 personas</option>
+              <option value="3 personas">3 personas</option>
+              <option value="4 personas">4 personas</option>
+              <option value="5 personas">5 personas</option>
+              <option value="6 personas">6 personas</option>
+            </select>
+          </div>
+
+          <!-- Mensaje opcional -->
+          <div>
+            <label for="guest-message" class="block font-cinzel text-[10px] uppercase tracking-[0.18em] font-semibold text-goldDark mb-1.5">
+              Mensaje para Luisana (Opcional)
+            </label>
+            <textarea
+              id="guest-message"
+              rows="3"
+              placeholder="Escribe un lindo deseo para la quinceañera..."
+              class="w-full rounded-xl bg-parchment/80 border border-goldAntique/45 px-4 py-3 text-sm text-inkWarm placeholder-inkWarm/45 focus:outline-none focus:ring-2 focus:ring-wine/30 focus:border-wine transition resize-none"
+            ></textarea>
+          </div>
+
+          <!-- Mensaje de retroalimentación amigable (sin usar alert) -->
+          <div
+            id="rsvp-feedback"
+            class="hidden rounded-xl px-4 py-3 text-sm text-center font-medium"
+            role="status"
+            aria-live="polite"
+          ></div>
+
+          <!-- Botón de envío a WhatsApp -->
+          <button
+            type="submit"
+            class="btn-royal w-full py-3.5 px-6 rounded-full text-white font-cinzel text-xs tracking-[0.18em] uppercase font-medium inline-flex items-center justify-center gap-2.5 cursor-pointer"
+          >
+            <svg class="w-5 h-5 text-goldLight" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 2C6.51 2 2.02 6.49 2.02 12.01c0 1.76.46 3.48 1.33 4.99L2 22l5.14-1.35a9.95 9.95 0 004.89 1.28h.01c5.52 0 10.01-4.49 10.01-10.01C22.05 6.49 17.55 2 12.03 2zm5.82 14.17c-.24.68-1.42 1.31-1.97 1.39-.51.07-1.15.1-1.86-.12-.43-.14-.98-.32-1.69-.63-2.97-1.28-4.91-4.29-5.06-4.49-.15-.2-1.21-1.61-1.21-3.07 0-1.46.76-2.18 1.03-2.48.27-.3.59-.37.79-.37.2 0 .4 0 .57.01.18.01.43-.07.67.51.24.59.84 2.04.91 2.19.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.44.52-.15.15-.3.31-.13.61.17.3.77 1.27 1.65 2.06 1.14 1.01 2.09 1.33 2.39 1.48.3.15.47.12.64-.07.17-.2.74-.86.94-1.16.2-.3.4-.25.67-.15.27.1 1.72.81 2.02.96.3.15.49.22.57.34.07.13.07.72-.17 1.4z" />
+            </svg>
+            <span>CONFIRMAR POR WHATSAPP</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         9. PIE DE PÁGINA DE DESPEDIDA
+         ============================================================ -->
+    <footer class="px-6 pt-6 pb-16 text-center reveal">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <span class="h-[1px] w-14 bg-gradient-to-r from-transparent to-goldAntique"></span>
+        <svg class="w-5 h-5 text-goldAntique" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
+        </svg>
+        <span class="h-[1px] w-14 bg-gradient-to-l from-transparent to-goldAntique"></span>
+      </div>
+
+      <p class="font-serif italic text-xl sm:text-2xl text-wineDeep leading-relaxed mb-3">
+        “¡Te espero para celebrar juntos esta noche mágica!”
+      </p>
+
+      <p class="font-script text-4xl sm:text-5xl gold-foil mb-1">
+        Luisana Daniela
+      </p>
+      <p class="font-cinzel uppercase tracking-[0.24em] text-[10px] text-goldDark mb-3">
+        Baltazar Mamani
+      </p>
+
+      <p class="font-cinzel text-[10px] uppercase tracking-[0.22em] text-inkWarm/60">
+        19 de Diciembre de 2026 · Copiapó
+      </p>
+    </footer>
+  </main>
+
+  <!-- ============================================================
+       BOTÓN FLOTANTE DE MÚSICA (ESQUINA INFERIOR DERECHA)
+       ============================================================ -->
+  <button
+    id="floating-music-btn"
+    type="button"
+    aria-label="Reproducir o pausar música de fondo"
+    title="Música: La Bella y la Bestia (Piano)"
+    class="fixed bottom-5 right-5 z-40 w-13 h-13 p-3.5 rounded-full btn-gold-circle flex items-center justify-center text-white cursor-pointer"
+  >
+    <svg id="float-icon-play" class="w-5 h-5 ml-0.5" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M8 5v14l11-7z" />
+    </svg>
+    <svg id="float-icon-pause" class="w-5 h-5 hidden" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M6 5h4v14H6zm8 0h4v14h-4z" />
+    </svg>
+  </button>
+
+  <!-- ============================================================
+       SCRIPTS: SOBRE 3D, MÚSICA (MP3 + PIANO RESPALDO), CUENTA
+       REGRESIVA, WHATSAPP RSVP Y DESTELLOS DORADOS
+       ============================================================ -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* ============================================================
+         1. REPRODUCTOR DE MÚSICA INTELIGENTE
+            Intenta reproducir "musica.mp3" primero; si el archivo no
+            está disponible (ej. en vista previa), activa suavemente
+            el piano sintetizado de "La Bella y la Bestia".
+         ============================================================ */
+      class FallbackPiano {
+        constructor() {
+          this.ctx = null;
+          this.masterGain = null;
+          this.isPlaying = false;
+          this.timerId = null;
+          this.stepIndex = 0;
+          this.beatSec = 0.72;
+          this.N = {
+            F2: 87.31, G2: 98.00, A2: 110.00, Bb2: 116.54, C3: 130.81, D3: 146.83, E3: 164.81,
+            F3: 174.61, G3: 196.00, A3: 220.00, Bb3: 233.08, C4: 261.63, D4: 293.66, E4: 329.63,
+            F4: 349.23, G4: 392.00, A4: 440.00, Bb4: 466.16, C5: 523.25, D5: 587.33, E5: 659.25,
+            F5: 698.46
+          };
+          this.score = this.buildScore();
+          this.totalBeats = 64;
+        }
+
+        buildScore() {
+          const ev = [];
+          const add = (beat, note, dur, vel) => ev.push({ beat, note, dur, vel });
+          const arp = (bar, notes) => notes.forEach((n, i) => add(bar + i * 0.5, n, 2.2, i === 0 ? 0.22 : 0.14));
+
+          arp(0, ['F3', 'C4', 'F4', 'A4', 'C4', 'F4']);
+          add(0, 'F4', 0.9, 0.34); add(1, 'A4', 0.9, 0.38); add(2, 'C5', 0.9, 0.42); add(3, 'D5', 0.9, 0.45);
+          arp(4, ['Bb2', 'F3', 'Bb3', 'D4', 'F3', 'Bb3']);
+          add(4, 'A4', 3.4, 0.40);
+
+          arp(8, ['F3', 'C4', 'F4', 'A4', 'C4', 'F4']);
+          add(8, 'F4', 0.9, 0.34); add(9, 'A4', 0.9, 0.38); add(10, 'C5', 0.9, 0.42); add(11, 'D5', 0.9, 0.46);
+          arp(12, ['C3', 'G3', 'C4', 'E4', 'G3', 'C4']);
+          add(12, 'C5', 3.4, 0.42);
+
+          arp(16, ['D3', 'A3', 'D4', 'F4', 'A3', 'D4']);
+          add(16, 'F4', 0.9, 0.35); add(17, 'A4', 0.9, 0.39); add(18, 'C5', 0.9, 0.43); add(19, 'D5', 0.9, 0.46);
+          arp(20, ['Bb2', 'F3', 'Bb3', 'D4', 'F3', 'Bb3']);
+          add(20, 'F5', 3.2, 0.46);
+
+          arp(24, ['G2', 'D3', 'G3', 'Bb3', 'D4', 'Bb3']);
+          add(24, 'E5', 0.9, 0.44); add(25, 'D5', 0.9, 0.42); add(26, 'C5', 0.9, 0.40); add(27, 'A4', 0.9, 0.38);
+          arp(28, ['C3', 'G3', 'Bb3', 'C4', 'E4', 'G3']);
+          add(28, 'G4', 1.4, 0.38); add(29.5, 'A4', 0.5, 0.35); add(30, 'G4', 2.0, 0.34);
+
+          arp(32, ['F3', 'C4', 'F4', 'A4', 'C4', 'F4']);
+          add(32, 'F4', 0.9, 0.34); add(33, 'A4', 0.9, 0.38); add(34, 'C5', 0.9, 0.42); add(35, 'D5', 0.9, 0.45);
+          arp(36, ['Bb2', 'F3', 'Bb3', 'D4', 'F3', 'Bb3']);
+          add(36, 'A4', 3.4, 0.40);
+
+          arp(40, ['F3', 'C4', 'F4', 'A4', 'C4', 'F4']);
+          add(40, 'F4', 0.9, 0.34); add(41, 'A4', 0.9, 0.38); add(42, 'C5', 0.9, 0.42); add(43, 'D5', 0.9, 0.46);
+          arp(44, ['C3', 'G3', 'C4', 'E4', 'G3', 'C4']);
+          add(44, 'C5', 3.4, 0.42);
+
+          arp(48, ['D3', 'A3', 'D4', 'F4', 'A3', 'D4']);
+          add(48, 'D5', 0.9, 0.44); add(49, 'E5', 0.9, 0.46); add(50, 'F5', 1.4, 0.48); add(51.5, 'E5', 0.5, 0.42);
+          arp(52, ['Bb2', 'F3', 'Bb3', 'D4', 'G3', 'C4']);
+          add(52, 'D5', 1.0, 0.42); add(53, 'C5', 1.0, 0.40); add(54, 'Bb4', 1.0, 0.38); add(55, 'A4', 1.0, 0.38);
+
+          arp(56, ['G2', 'D3', 'Bb3', 'C3', 'G3', 'Bb3']);
+          add(56, 'G4', 1.0, 0.38); add(57, 'A4', 1.0, 0.40); add(58, 'G4', 1.0, 0.38); add(59, 'E4', 1.0, 0.35);
+          arp(60, ['F2', 'C3', 'F3', 'A3', 'C4', 'F4']);
+          add(60, 'F4', 3.8, 0.42); add(60, 'A4', 3.8, 0.25);
+
+          return ev.sort((a, b) => a.beat - b.beat);
+        }
+
+        init() {
+          if (this.ctx) return;
+          const AudioCtx = window.AudioContext || window.webkitAudioContext;
+          this.ctx = new AudioCtx();
+          this.masterGain = this.ctx.createGain();
+          this.masterGain.gain.value = 0.62;
+          this.masterGain.connect(this.ctx.destination);
+        }
+
+        playNote(freq, startTime, durSec, vel) {
+          if (!this.ctx || !freq) return;
+          const gain = this.ctx.createGain();
+          const filter = this.ctx.createBiquadFilter();
+          filter.type = 'lowpass';
+          filter.frequency.setValueAtTime(Math.min(freq * 5.5, 3400), startTime);
+          filter.frequency.exponentialRampToValueAtTime(Math.max(freq * 1.5, 500), startTime + durSec);
+
+          const osc1 = this.ctx.createOscillator();
+          const osc2 = this.ctx.createOscillator();
+          const osc2Gain = this.ctx.createGain();
+          osc1.type = 'triangle';
+          osc1.frequency.setValueAtTime(freq, startTime);
+          osc2.type = 'sine';
+          osc2.frequency.setValueAtTime(freq * 2, startTime);
+          osc2Gain.gain.value = 0.2;
+
+          gain.gain.setValueAtTime(0.0001, startTime);
+          gain.gain.linearRampToValueAtTime(vel, startTime + 0.02);
+          gain.gain.exponentialRampToValueAtTime(vel * 0.42, startTime + 0.24);
+          gain.gain.exponentialRampToValueAtTime(0.0008, startTime + durSec + 0.5);
+
+          osc1.connect(filter);
+          osc2.connect(osc2Gain);
+          osc2Gain.connect(filter);
+          filter.connect(gain);
+          gain.connect(this.masterGain);
+
+          osc1.start(startTime);
+          osc2.start(startTime);
+          osc1.stop(startTime + durSec + 0.6);
+          osc2.stop(startTime + durSec + 0.6);
+        }
+
+        schedule() {
+          if (!this.isPlaying || !this.ctx) return;
+          const now = this.ctx.currentTime;
+          while (this.nextEventTime < now + 0.2) {
+            const ev = this.score[this.stepIndex];
+            this.playNote(this.N[ev.note], this.nextEventTime, ev.dur * this.beatSec, ev.vel);
+            this.stepIndex++;
+            if (this.stepIndex >= this.score.length) {
+              this.stepIndex = 0;
+              this.loopStartTime += this.totalBeats * this.beatSec;
+            }
+            this.nextEventTime = this.loopStartTime + this.score[this.stepIndex].beat * this.beatSec;
+          }
+          this.timerId = setTimeout(() => this.schedule(), 60);
+        }
+
+        start() {
+          try {
+            this.init();
+            if (this.ctx.state === 'suspended') this.ctx.resume();
+            if (this.isPlaying) return;
+            this.isPlaying = true;
+            this.stepIndex = 0;
+            this.loopStartTime = this.ctx.currentTime + 0.08;
+            this.nextEventTime = this.loopStartTime + this.score[0].beat * this.beatSec;
+            this.schedule();
+          } catch (e) {
+            console.error('Error iniciando piano de respaldo:', e);
+          }
+        }
+
+        stop() {
+          this.isPlaying = false;
+          if (this.timerId) {
+            clearTimeout(this.timerId);
+            this.timerId = null;
+          }
+          if (this.ctx && this.ctx.state === 'running') {
+            this.ctx.suspend();
+          }
+        }
+      }
+
+      const bgMusic = document.getElementById('bgMusic');
+      const fallbackPiano = new FallbackPiano();
+      let usingFallback = false;
+      let isPlaying = false;
+
+      const inlineBtn = document.getElementById('inline-music-btn');
+      const inlinePlayIcon = document.getElementById('inline-icon-play');
+      const inlinePauseIcon = document.getElementById('inline-icon-pause');
+      const wavesLeft = document.getElementById('inline-waves-left');
+      const wavesRight = document.getElementById('inline-waves-right');
+
+      const floatBtn = document.getElementById('floating-music-btn');
+      const floatPlayIcon = document.getElementById('float-icon-play');
+      const floatPauseIcon = document.getElementById('float-icon-pause');
+
+      if (bgMusic) {
+        bgMusic.volume = 0.55;
+        bgMusic.addEventListener('error', () => {
+          usingFallback = true;
+        });
+      }
+
+      function syncMusicUI(playing) {
+        isPlaying = playing;
+        inlinePlayIcon.classList.toggle('hidden', playing);
+        inlinePauseIcon.classList.toggle('hidden', !playing);
+        floatPlayIcon.classList.toggle('hidden', playing);
+        floatPauseIcon.classList.toggle('hidden', !playing);
+        wavesLeft.classList.toggle('is-playing', playing);
+        wavesRight.classList.toggle('is-playing', playing);
+      }
+
+      function startMusic() {
+        if (!usingFallback && bgMusic) {
+          const playPromise = bgMusic.play();
+          if (playPromise !== undefined) {
+            playPromise
+              .then(() => {
+                syncMusicUI(true);
+              })
+              .catch(() => {
+                // Si musica.mp3 no existe en el entorno actual, activar piano de respaldo
+                usingFallback = true;
+                fallbackPiano.start();
+                syncMusicUI(true);
+              });
+            return;
+          }
+        }
+        fallbackPiano.start();
+        syncMusicUI(true);
+      }
+
+      function pauseMusic() {
+        if (!usingFallback && bgMusic) {
+          bgMusic.pause();
+        } else {
+          fallbackPiano.stop();
+        }
+        syncMusicUI(false);
+      }
+
+      function toggleMusic() {
+        if (isPlaying) {
+          pauseMusic();
+        } else {
+          startMusic();
+        }
+      }
+
+      inlineBtn.addEventListener('click', toggleMusic);
+      floatBtn.addEventListener('click', toggleMusic);
+
+      /* ============================================================
+         2. APERTURA ANIMADA DEL SOBRE 3D (PANTALLA 1 -> PANTALLA 2)
+         ============================================================ */
+      const envelopeScreen = document.getElementById('envelope-screen');
+      const envelopeTrigger = document.getElementById('envelope-trigger');
+      const envelopeBox = document.getElementById('envelope-box');
+      let envelopeOpened = false;
+
+      // Bloquear scroll mientras el sobre está cerrado
+      document.body.style.overflow = 'hidden';
+
+      function openEnvelope() {
+        if (envelopeOpened) return;
+        envelopeOpened = true;
+
+        // 1. Iniciar animación del sobre (solapa + tarjeta deslizando)
+        envelopeBox.classList.add('is-open');
+
+        // 2. Iniciar música inmediatamente al gesto del usuario
+        startMusic();
+
+        // 3. Desvanecer la pantalla del sobre suavemente
+        setTimeout(() => {
+          envelopeScreen.classList.add('fade-out');
+          document.body.style.overflow = '';
+        }, 950);
+
+        // 4. Ocultar capa del sobre al terminar la transición
+        setTimeout(() => {
+          envelopeScreen.style.display = 'none';
+        }, 1900);
+      }
+
+      envelopeTrigger.addEventListener('click', openEnvelope);
+      envelopeTrigger.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openEnvelope();
+        }
+      });
+
+      /* ============================================================
+         3. CUENTA REGRESIVA EN VIVO (19 DIC 2026 - 19:30 CHILE)
+         ============================================================ */
+      const targetDate = new Date('2026-12-19T19:30:00-03:00').getTime();
+      const elDays = document.getElementById('cd-days');
+      const elHours = document.getElementById('cd-hours');
+      const elMinutes = document.getElementById('cd-minutes');
+      const elSeconds = document.getElementById('cd-seconds');
+      const elFinished = document.getElementById('countdown-finished');
+
+      function pad(n) {
+        return String(n).padStart(2, '0');
+      }
+
+      function updateCountdown() {
+        const diff = targetDate - Date.now();
+        if (diff <= 0) {
+          elDays.textContent = '00';
+          elHours.textContent = '00';
+          elMinutes.textContent = '00';
+          elSeconds.textContent = '00';
+          elFinished.classList.remove('hidden');
+          return;
+        }
+        elDays.textContent = pad(Math.floor(diff / (1000 * 60 * 60 * 24)));
+        elHours.textContent = pad(Math.floor((diff / (1000 * 60 * 60)) % 24));
+        elMinutes.textContent = pad(Math.floor((diff / (1000 * 60)) % 60));
+        elSeconds.textContent = pad(Math.floor((diff / 1000) % 60));
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      /* ============================================================
+         4. ANIMACIONES SUAVES AL HACER SCROLL (IntersectionObserver)
+         ============================================================ */
+      const revealNodes = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.12 }
+        );
+        revealNodes.forEach((el) => observer.observe(el));
+      } else {
+        revealNodes.forEach((el) => el.classList.add('visible'));
+      }
+
+      /* ============================================================
+         5. CONFIRMACIÓN POR WHATSAPP (+569 68150474)
+         ============================================================ */
+      const rsvpForm = document.getElementById('rsvp-form');
+      const guestNameInput = document.getElementById('guest-name');
+      const guestCountSelect = document.getElementById('guest-count');
+      const guestMsgInput = document.getElementById('guest-message');
+      const rsvpFeedback = document.getElementById('rsvp-feedback');
+
+      function setFeedback(message, isError) {
+        rsvpFeedback.textContent = message;
+        rsvpFeedback.className = 'rounded-xl px-4 py-3 text-sm text-center font-medium border';
+        if (isError) {
+          rsvpFeedback.classList.add('bg-red-50', 'text-red-700', 'border-red-200');
+        } else {
+          rsvpFeedback.classList.add('bg-parchmentWarm', 'text-wineDeep', 'border-goldAntique/45');
+        }
+      }
+
+      rsvpForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = guestNameInput.value.trim();
+        const count = guestCountSelect.value;
+        const msg = guestMsgInput.value.trim();
+
+        if (!name) {
+          setFeedback('Por favor, escribe tu nombre completo para confirmar tu asistencia.', true);
+          guestNameInput.focus();
+          return;
+        }
+
+        let text = `¡Hola! ✨👑 Confirmo con mucha alegría mi asistencia a los *XV Años de Luisana Daniela Baltazar Mamani*.\n\n`;
+        text += `👤 *Nombre:* ${name}\n`;
+        text += `👨‍👩‍👧‍👦 *Asistentes:* ${count}\n`;
+        if (msg) {
+          text += `💌 *Mensaje para Luisana:* "${msg}"\n`;
+        }
+        text += `\n¡Nos vemos el Sábado 19 de Diciembre a las 19:30 hrs en Salón de Eventos DIPRECA! 🥂💜`;
+
+        const whatsappUrl = `https://wa.me/56968150474?text=${encodeURIComponent(text)}`;
+        setFeedback('Abriendo WhatsApp para enviar tu confirmación...', false);
+        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+      });
+
+      /* ============================================================
+         6. DESTELLOS DORADOS SUTILES EN EL FONDO (CANVAS RESPONSIVO)
+         ============================================================ */
+      const canvas = document.getElementById('sparkles-canvas');
+      const ctx = canvas.getContext('2d');
+      let w = 0;
+      let h = 0;
+      let dots = [];
+
+      function resizeCanvas() {
+        w = canvas.width = window.innerWidth;
+        h = canvas.height = window.innerHeight;
+      }
+
+      function initSparkles() {
+        const total = w < 640 ? 22 : 34;
+        dots = [];
+        for (let i = 0; i < total; i++) {
+          dots.push({
+            x: Math.random() * w,
+            y: Math.random() * h,
+            r: Math.random() * 2 + 0.9,
+            vy: -(Math.random() * 0.25 + 0.1),
+            vx: (Math.random() - 0.5) * 0.2,
+            phase: Math.random() * Math.PI * 2,
+            speed: Math.random() * 0.025 + 0.01,
+          });
+        }
+      }
+
+      function animateSparkles() {
+        ctx.clearRect(0, 0, w, h);
+        for (let i = 0; i < dots.length; i++) {
+          const d = dots[i];
+          d.y += d.vy;
+          d.x += d.vx;
+          d.phase += d.speed;
+          if (d.y < -10) {
+            d.y = h + 10;
+            d.x = Math.random() * w;
+          }
+          if (d.x < -10) d.x = w + 10;
+          if (d.x > w + 10) d.x = -10;
+
+          const alpha = 0.15 + Math.abs(Math.sin(d.phase)) * 0.45;
+          ctx.beginPath();
+          ctx.fillStyle = `rgba(184, 142, 56, ${alpha.toFixed(2)})`;
+          ctx.arc(d.x, d.y, d.r, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        requestAnimationFrame(animateSparkles);
+      }
+
+      window.addEventListener('resize', () => {
+        resizeCanvas();
+        initSparkles();
+      });
+
+      window.onload = function () {
+        resizeCanvas();
+        initSparkles();
+        animateSparkles();
+      };
+    })();
+  </script>
+</body>
+</html>
